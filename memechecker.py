@@ -33,6 +33,8 @@ if len(sys.argv) == 4:
 else:
 	threshold = 10
 
+print("Match\tDiff\tHash 1\t\t\tHash2\t\t\tFilename 1/2\n------")
+
 for i in hashBase1:
 	for j in hashBase2:
 		diff = i[1] - j[1]
