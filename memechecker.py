@@ -37,6 +37,9 @@ for i in hashBase1:
 	for j in hashBase2:
 		diff = i[1] - j[1]
 		if(diff < threshold):
-			print("YES\t", diff, "\t", i[1], "\t", j[1], "\t", i[0], "\t", j[0])
+			if(i[0] == j[0]):
+				print("IDEM\t", diff, "\t", i[1], "\t", j[1], "\t", i[0], "\t", j[0])
+			else:
+				print("YES\t", diff, "\t", i[1], "\t", j[1], "\t", i[0], "\t", j[0])
 		else:
 			print("NO\t", diff, "\t", i[1], "\t", j[1], "\t", i[0], "\t", j[0])
