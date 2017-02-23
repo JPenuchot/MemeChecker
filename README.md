@@ -11,7 +11,7 @@ python3 memechecker.py [IMAGE_BASE_1_REGEX] [IMAGE_BASE_2_REGEX] [(Optional) THR
 Example :
 
 ```bash
-python3 memechecker.py "/home/user/Pictures/*.jpg" "/home/user/Downloads/*.jpg 10"
+python3 memechecker.py "/home/user/Pictures/*.jpg" "/home/user/Downloads/*.jpg" 10
 ```
 
 ### Dependencies
