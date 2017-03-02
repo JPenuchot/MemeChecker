@@ -12,10 +12,8 @@ def genHashBase(imgGlob):
 		try:
 			base.append([currImg, imagehash.phash(Image.open(currImg))])
 		except FileNotFoundError:
-			print("FileNotFoundError")
 			continue
 		except IsADirectoryError:
-			print("IsADirectoryError")
 			continue
 	return base
 
