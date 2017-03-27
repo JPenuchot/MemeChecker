@@ -15,6 +15,8 @@ def genHashBase(imgGlob):
 			continue
 		except IsADirectoryError:
 			continue
+		except OSError:
+			continue
 	return base
 
 #	Input management
