@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.5
+
 import os
 import sys
 import glob
@@ -22,7 +24,7 @@ def genHashBase(imgGlob):
 #	Input management
 
 if not (len(sys.argv) == 3 or len(sys.argv) == 4):
-	print("Usage : python3 memechecker.py [IMAGE_BASE_1_REGEX] [IMAGE_BASE_2_REGEX] [(Optional) THRESHOLD]")
+	print("Usage : memechecker.py [IMAGE_BASE_1_GLOB] [IMAGE_BASE_2_GLOB] [(Optional) THRESHOLD]")
 	exit()
 
 hashBase1 = genHashBase(sys.argv[1])
